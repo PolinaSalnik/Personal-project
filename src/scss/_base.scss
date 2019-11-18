@@ -2,6 +2,7 @@ $font-stack: 'Muli',
 sans-serif;
 $font-stack-logo: 'Raleway',
 sans-serif;
+$font-stack-headers: 'Overpass', sans-serif;
 $font-color: white;
 
 * {
@@ -14,11 +15,19 @@ li {
 }
 
 h2 {
-    font-size: 35px;
     padding-bottom: 20px;
+    font-family: $font-stack-headers;
+    letter-spacing: 2px;
 }
 
 h4 {
+    padding-bottom: 20px;
+}
+
+
+h3 {
+    font-family: $font-stack-headers;
+    letter-spacing: 2px;
     padding-bottom: 20px;
 }
 
@@ -155,48 +164,17 @@ li a:hover,
     display: block;
 }
 
-@media screen and (max-width: 999px) {
-    .menu__icon {
-        display: inline-block;
-    }
-
-    .header-navigation {
-        position: fixed;
-        display: none;
-        top: 0;
-        right: 0;
-        left: 0;
-        margin-top: 52px;
-        background-color: #7bc8fb98;
-        z-index: 1000;
-        overflow: auto;
-    }
-
-    .nav_links {
-        display: block;
-        padding: 10px 0;
-        text-align: center;
-    }
-}
-
-.carousel-caption {
-    padding-bottom: 300px;
-}
-
 .about {
-    background-color: rgb(249, 252, 253);
-    height: 500px;
+    height: 400px;
+}
+
+mark {
+    font-family: $font-stack-logo;
 }
 
 .about_designer {
     text-align: center;
-    padding-top: 150px;
-}
-
-mark {
-    color: rgb(236, 186, 47);
-    background-color: rgb(255, 235, 248);
-    font-weight: bold;
+    padding-top: 100px;
 }
 
 #btn-get-in-touch {
@@ -213,16 +191,24 @@ mark {
 
 .services {
     height: 800px;
+    background-color: rgb(249, 252, 253);
 }
 
 .our_services {
     padding-top: 100px;
     text-align: center;
-
 }
 
-.txt_services {
+.txt_above {
+    font-size: 12px;
+    color: rgb(160, 160, 160);
+    letter-spacing: 3px;
+}
+
+.txt_blocks_description {
     font-size: 15px;
+    line-height: 28px;
+    font-family: $font-stack;
     color: rgb(160, 160, 160);
 }
 
@@ -234,12 +220,13 @@ mark {
 
 .our_services_items_names {
     font-size: 25px;
-    color: rgb(236, 186, 47);
-    background-color: rgb(255, 235, 248);
     font-weight: bold;
 }
 
 .our_services_items_txt {
+    font-size: 15px;
+    line-height: 28px;
+    font-family: $font-stack;
     color: rgb(160, 160, 160);
 }
 
@@ -262,6 +249,9 @@ mark {
 }
 
 .subcribe_txt {
+    font-size: 15px;
+    line-height: 28px;
+    font-family: $font-stack;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 40px;
@@ -281,9 +271,9 @@ mark {
 }
 
 .works {
-    padding-top: 150px;
+    padding-top: 120px;
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 .txt_works {
@@ -291,12 +281,74 @@ mark {
     color: rgb(160, 160, 160);
 }
 
+.works_examples {
+    margin-top: 80px;
+}
+
+.work_example_item {
+    display: flex;
+    padding-bottom: 100px;
+}
+
 .pink_background {
     background-color: rgb(251, 223, 241);
-    width: 530px;
-    height: 620px;
+    width: 480px;
+    height: 640px;
     padding-top: 20px;
+    padding-left: 20px;
+}
+
+.work_example_film-txt {
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.work_example_notebook-txt {
+    padding-right: 150px;
+    padding-top: 150px;
+}
+
+.work_example_camera-txt {
+    padding-left: 150px;
+    padding-top: 150px;
+}
+
+.portfolio_describtion {
+    font-size: 18px;
+    font-family: $font-stack;
+    color: rgb(160, 160, 160);
+    line-height: 30px;
+}
+
+#btn_view_portfolio {
     margin-top: 30px;
+    background-color: rgb(251, 223, 241);
+    color: rgb(235, 134, 181);
+    border-radius: 32px;
+    font-size: 15px;
+    font-family: $font-stack;
+    width: 140px;
+    height: 40px;
+    border: none;
+}
+
+#view_all_projects {
+    margin-top: 30px;
+    background-color: #ff86a0;
+    ;
+    color: rgb(255, 255, 255);
+    border-radius: 32px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: $font-stack;
+    width: 190px;
+    height: 60px;
+    border: none;
+}
+
+.reviews {
+    background-color: rgb(249, 252, 253);
+    height: 500px;
 }
 
 .footer {
@@ -334,7 +386,29 @@ mark {
 
 @media (min-width: 1200px) {}
 
+@media screen and (max-width: 999px) {
+    .menu__icon {
+        display: inline-block;
+    }
 
+    .header-navigation {
+        position: fixed;
+        display: none;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin-top: 52px;
+        background-color: #7bc8fb98;
+        z-index: 1000;
+        overflow: auto;
+    }
+
+    .nav_links {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
 
 .loaderArea {
     background: linear-gradient(90deg, #f086af, #eb9d7f);
