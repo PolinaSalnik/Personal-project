@@ -2,7 +2,8 @@ $font-stack: 'Muli',
 sans-serif;
 $font-stack-logo: 'Raleway',
 sans-serif;
-$font-stack-headers: 'Overpass', sans-serif;
+$font-stack-headers: 'Open Sans',
+sans-serif;
 $font-color: white;
 
 * {
@@ -18,6 +19,7 @@ h2 {
     padding-bottom: 20px;
     font-family: $font-stack-headers;
     letter-spacing: 2px;
+    font-weight: 800;
 }
 
 h4 {
@@ -166,15 +168,12 @@ li a:hover,
 
 .about {
     height: 400px;
+    text-align: center;
+    padding-top: 100px;
 }
 
 mark {
     font-family: $font-stack-logo;
-}
-
-.about_designer {
-    text-align: center;
-    padding-top: 100px;
 }
 
 #btn-get-in-touch {
@@ -190,18 +189,15 @@ mark {
 }
 
 .services {
-    height: 800px;
+    height: 730px;
     background-color: rgb(249, 252, 253);
-}
-
-.our_services {
     padding-top: 100px;
     text-align: center;
 }
 
 .txt_above {
     font-size: 12px;
-    color: rgb(160, 160, 160);
+    color: rgb(189, 189, 189);
     letter-spacing: 3px;
 }
 
@@ -246,9 +242,6 @@ mark {
     background: linear-gradient(to left, #eb9d7f, #f086af);
     height: 500px;
     color: $font-color;
-}
-
-.subcribe_txt {
     font-size: 15px;
     line-height: 28px;
     font-family: $font-stack;
@@ -262,7 +255,7 @@ mark {
     border: 1px solid rgba(255, 255, 255, 0.507);
     border-radius: 30px;
     padding: 15px 70px;
-    margin-left: 420px;
+
 }
 
 ::placeholder {
@@ -271,14 +264,9 @@ mark {
 }
 
 .works {
-    padding-top: 120px;
+    padding-top: 100px;
     text-align: center;
     padding-bottom: 100px;
-}
-
-.txt_works {
-    font-size: 15px;
-    color: rgb(160, 160, 160);
 }
 
 .works_examples {
@@ -298,18 +286,13 @@ mark {
     padding-left: 20px;
 }
 
-.work_example_film-txt {
+.work_example-txt {
     padding-left: 150px;
     padding-top: 150px;
 }
 
 .work_example_notebook-txt {
     padding-right: 150px;
-    padding-top: 150px;
-}
-
-.work_example_camera-txt {
-    padding-left: 150px;
     padding-top: 150px;
 }
 
@@ -349,6 +332,72 @@ mark {
 .reviews {
     background-color: rgb(249, 252, 253);
     height: 500px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.achievements {
+    height: 550px;
+    background-color: rgba(17, 196, 212, 0.918);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: $font-stack;
+    padding-top: 100px;
+}
+
+.achievements_numbers-items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    font-size: 15px;
+    line-height: 28px;
+    font-family: $font-stack;
+}
+
+.count {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.txt_blocks_description-achievements {
+    color: rgba(255, 255, 255, 0.685);
+}
+
+.blog {
+    background-color: rgb(249, 252, 253);
+    height: 1100px;
+    padding-top: 100px;
+    text-align: center;
+    line-height: 28px;
+    font-family: $font-stack;
+}
+
+.blog_items {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+.blog_item-background {
+    height: 600px;
+    width: 350px;
+    box-shadow: 0 0 9px 4px rgba(218, 217, 217, 0.849);
+    border-bottom: 7px double rgba(218, 217, 217, 0.849);
+
+}
+
+.blog_items-txt {
+    padding-top: 25px;
+    font-family: $font-stack;
+    font-size: 18px;
+}
+
+.blog_items-date {
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(189, 189, 189);
 }
 
 .footer {
@@ -374,6 +423,15 @@ mark {
 .contacts_footer {
     color: $font-color;
     padding: 40px;
+}
+
+.footer_bottom {
+    height: 25px;
+    font-size: 13px;
+    background-color: #f37a95;
+    color: rgba(255, 255, 255, 0.781);
+    text-align: center;
+    padding-top: 3px;
 }
 
 @media (max-width: 320px) {}
