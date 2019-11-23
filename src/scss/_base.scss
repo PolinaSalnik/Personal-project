@@ -172,10 +172,6 @@ li a:hover,
     padding-top: 100px;
 }
 
-mark {
-    font-family: $font-stack-logo;
-}
-
 #btn-get-in-touch {
     margin-top: 30px;
     background-color: rgb(251, 223, 241);
@@ -240,13 +236,13 @@ mark {
 
 .subcribe {
     background: linear-gradient(to left, #eb9d7f, #f086af);
-    height: 500px;
+    height: 530px;
     color: $font-color;
     font-size: 15px;
     line-height: 28px;
     font-family: $font-stack;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 40px;
 }
 
@@ -281,7 +277,7 @@ mark {
 .pink_background {
     background-color: rgb(251, 223, 241);
     width: 480px;
-    height: 640px;
+    height: 600px;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -447,7 +443,7 @@ mark {
 
     .about {
         height: 250px;
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     #btn-get-in-touch {
@@ -457,7 +453,7 @@ mark {
 
     .services {
         margin-top: 80px;
-        padding-top: 60px;
+        padding-top: 50px;
         height: 350px;
     }
 
@@ -466,28 +462,44 @@ mark {
     }
 
     .subcribe {
-        padding-top: 60px;
+        padding-top: 50px;
+        height: 470px;
+    }
+
+    .email_form {
+        padding: 15px 50px;
     }
 
     .reviews {
-        padding-top: 60px;
+        padding-top: 50px;
     }
 
     .works {
         display: none;
     }
 
-.achievements_numbers-items {
-    font-size: 10px;
-}
+    .reviews {
+        height: 320px;
+    }
 
-.count {
-font-size: 40px;
-font-weight: 500;
-padding-right: 10px;
-}
+    .achievements {
+        padding-top: 50px;
+        height: 480px;
+    }
+
+    .achievements_numbers-items {
+        font-size: 10px;
+    }
+
+    .count {
+        font-size: 40px;
+        font-weight: 500;
+        padding-right: 10px;
+    }
+
     .blog {
-        height: 2300px;
+        padding-top: 50px;
+        height: 2200px;
     }
 
     .blog_items {
