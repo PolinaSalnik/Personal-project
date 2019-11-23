@@ -37,3 +37,25 @@
 		countup("count", $(".count").text());
 		countup("count2", $(".count2").text());
         });
+
+
+        $({blurRadius: 5}).animate({blurRadius: 0}, {
+          duration: 1000,
+          easing: 'swing',
+          step: function() {
+            $(".lines").css({
+              "-webkit-filter": "blur("+this.blurRadius+"px)",
+              "filter": "blur("+this.blurRadius+"px)"
+            });
+          }
+        });
+        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
+        $(".lines").each(function() {
+          var tcount = $(this).data("count");
+          $(this).animateNumber({ number: tcount,
+            easing: 'easeInQuad',
+            "font-size": "40px",
+            numberStep: comma_separator_number_step},
+            2000);
+        });
+        
