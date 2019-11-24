@@ -15,47 +15,62 @@
   })(jQuery);
 
 
-  function countup(className){
-		var countBlockTop = $("."+className).offset().top;
-		var windowHeight = window.innerHeight;
-		var show = true;
-					
-		$(window).scroll( function (){
-			if(show && (countBlockTop < $(window).scrollTop() + windowHeight)){ 
-				show = false;
-						
-				$('.'+className).spincrement({
-					from: 1,
-					duration: 4000,
-				});
-			}
-		})	
-	}
+      /*  var form = document.querySelector('.contact-form');
+        var requireInputs = document.querySelectorAll('.require');
 
-	
-        $(function() {
-		countup("count", $(".count").text());
-		countup("count2", $(".count2").text());
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            removeAlerts();
+            checkInputs();
         });
 
+        function checkInputs() {
+            var emptyInputs = 0;
+            for (var i = 0; i < requireInputs.length; i++) {
+                if (!requireInputs[i].value) {
+                    var formValid = true;
+                    emptyInputs++;
+                    var errorMsg = document.createElement('span');
+                    errorMsg.classList.add('help-block');
+                    errorMsg.innerHTML = 'Please, fill in the field';
+                    requireInputs[i].classList.add('errorMsg');
+                    requireInputs[i].parentElement.insertBefore(errorMsg, null);
+                }
+            }
+            if (emptyInputs === 0) {
+                return true;
+            } else {
+                var formValid = false;
+                return false;
+            }
+            if (formValid) {
 
-        $({blurRadius: 5}).animate({blurRadius: 0}, {
-          duration: 1000,
-          easing: 'swing',
-          step: function() {
-            $(".lines").css({
-              "-webkit-filter": "blur("+this.blurRadius+"px)",
-              "filter": "blur("+this.blurRadius+"px)"
-            });
-          }
-        });
-        var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(' ');
-        $(".lines").each(function() {
-          var tcount = $(this).data("count");
-          $(this).animateNumber({ number: tcount,
-            easing: 'easeInQuad',
-            "font-size": "40px",
-            numberStep: comma_separator_number_step},
-            2000);
-        });
-        
+            }
+        }
+
+        function removeAlerts() {
+            var alerts = document.querySelectorAll('.help-block');
+            for (var i = 0; i < alerts.length; i++) {
+                alerts[i].remove();
+            }
+            for (var i = 0; i < requireInputs.length; i++) {
+                requireInputs[i].classList.remove('errorMsg');
+            }
+        }
+*/
+
+
+/* $(window).scroll(function () { // Когда страница прокручивается
+  var scrTop = $(window).scrollTop();
+    if(scrTop>$('.number').offset().top - $(window).height()  ) {
+        numAnimate();
+    }
+});
+var currentNumber = $('.number').text();
+$({numberValue: currentNumber}).animate({numberValue: 100}, {
+    duration: 8000,
+    easing: 'linear',
+    step: function() { 
+        $('.number').text(Math.ceil(this.numberValue)); 
+    }
+}); */
