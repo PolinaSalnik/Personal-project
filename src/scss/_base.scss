@@ -353,10 +353,35 @@ li a:hover,
 
 .reviews {
     background-color: rgb(249, 252, 253);
-    height: 500px;
+    height: 650px;
     padding-top: 100px;
     text-align: center;
 }
+
+.carousel {
+    margin-top: 100px;
+    height: 250px;
+    
+}
+
+.item {
+    margin-left: 300px;
+}
+
+.personal_rewies {
+    text-align: center;
+margin-left: 100px;
+color: #5c5c5c;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.ri {
+    background-image: none;
+    }
 
 .achievements {
     height: 450px;
@@ -378,7 +403,9 @@ li a:hover,
     font-family: $font-stack;
 }
 
-.numbers {
+.numberYears,
+.numberProjects,
+.numberCustomers {
     font-size: 50px;
     font-weight: 800;
 }
@@ -501,7 +528,7 @@ li a:hover,
     }
 
     .reviews {
-        padding-top: 50px;
+        display: none;
     }
 
     .works {
@@ -725,3 +752,4 @@ li a:hover,
 .errorMsg {
     border-color: rgba(245, 20, 20, 0.822);
 }
+

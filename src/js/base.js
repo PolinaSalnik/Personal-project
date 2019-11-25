@@ -60,17 +60,32 @@
 */
 
 
-/* $(window).scroll(function () { // Когда страница прокручивается
-  var scrTop = $(window).scrollTop();
-    if(scrTop>$('.number').offset().top - $(window).height()  ) {
-        numAnimate();
-    }
-});
-var currentNumber = $('.number').text();
-$({numberValue: currentNumber}).animate({numberValue: 100}, {
-    duration: 8000,
+ var countYears = $('.numberYears').text();
+
+$({numberValue: countYears}).animate({numberValue: 13}, {
+    duration: 9900,
     easing: 'linear',
     step: function() { 
-        $('.number').text(Math.ceil(this.numberValue)); 
+        $('.numberYears').text(Math.ceil(this.numberValue)); 
     }
-}); */
+}); 
+
+var countProjects = $('.numberProjects').text();
+
+$({numberValue: countProjects}).animate({numberValue: 1033}, {
+    duration: 9900,
+    easing: 'linear',
+    step: function() { 
+        $('.numberProjects').text(Math.ceil(this.numberValue)); 
+    }
+}); 
+
+var countCustomers = $('.numberCustomers').text();
+
+$({numberValue: countCustomers}).animate({numberValue: 8050}, {
+    duration: 9900,
+    easing: 'linear',
+    step: function() { 
+        $('.numberCustomers').text(Math.ceil(this.numberValue)); 
+    }
+}); 
