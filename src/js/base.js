@@ -1,3 +1,15 @@
+  
+  $(function() {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+      items: 3,
+      margin: 40,
+      loop: true,
+      nav: true
+    });
+  });
+  
   $(window).on('load', function () {
     $preloader = $('.loaderArea'),
       $loader = $preloader.find('.loader');
@@ -15,7 +27,7 @@
   })(jQuery);
 
 
-       var form = document.querySelector('.contact-form');
+   /*    var form = document.querySelector('.contact-form');
         var requireInputs = document.querySelectorAll('.require');
 
         form.addEventListener('submit', function (event) {
@@ -28,7 +40,7 @@
             var emptyInputs = 0;
             for (var i = 0; i < requireInputs.length; i++) {
                 if (!requireInputs[i].value) {
-                    var formValid = true;
+                  
                     emptyInputs++;
                     var errorMsg = document.createElement('span');
                     errorMsg.classList.add('help-block');
@@ -40,12 +52,12 @@
             if (emptyInputs === 0) {
                 return true;
             } else {
-                var formValid = false;
+                
                 return false;
             }
-            if (formValid) {
+        
 
-            }
+            
         }
 
         function removeAlerts() {
@@ -57,7 +69,7 @@
                 requireInputs[i].classList.remove('errorMsg');
             }
         }
-
+*/
 
  var countYears = $('.numberYears').text();
 
