@@ -15,7 +15,7 @@
   })(jQuery);
 
 
-      /*  var form = document.querySelector('.contact-form');
+       var form = document.querySelector('.contact-form');
         var requireInputs = document.querySelectorAll('.require');
 
         form.addEventListener('submit', function (event) {
@@ -57,7 +57,6 @@
                 requireInputs[i].classList.remove('errorMsg');
             }
         }
-*/
 
 
  var countYears = $('.numberYears').text();
@@ -89,3 +88,5 @@ $({numberValue: countCustomers}).animate({numberValue: 8050}, {
         $('.numberCustomers').text(Math.ceil(this.numberValue)); 
     }
 }); 
+
+
