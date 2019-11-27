@@ -1,1 +1,1 @@
-//= wow.min.js
+//= wow.js

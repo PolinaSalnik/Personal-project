@@ -10,6 +10,10 @@
     });
   });
   
+  $(document).ready(function(){
+    new WOW().init();
+    });
+
   $(window).on('load', function () {
     $preloader = $('.loaderArea'),
       $loader = $preloader.find('.loader');
