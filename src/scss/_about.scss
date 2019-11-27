@@ -1,0 +1,33 @@
+.about {
+    height: 450px;
+    text-align: center;
+}
+
+.about_us_page {
+    padding-top: 50px;
+    font-size: 16px;
+    font-family: $font-stack;
+    color: rgb(145, 143, 143);
+}
+
+.about_img_page {
+display: flex;
+justify-content: space-around;
+padding-bottom: 80px;
+}
+
+@media (max-width: 320px) {}
+
+@media (max-width: 575px) {
+    .about {
+        height: 650px;
+    }
+
+    .about_us_page {
+        padding-top: 20px;
+    }
+
+    .about_img_page { 
+       display: none;
+    }
+}

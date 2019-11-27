@@ -1,0 +1,13 @@
+$font-stack: 'Muli',
+sans-serif;
+$font-stack-logo: 'Raleway',
+sans-serif;
+$font-stack-headers: 'Open Sans',
+sans-serif;
+
+.services_page_item {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: $font-stack;
+}
