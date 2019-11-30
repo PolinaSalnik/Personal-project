@@ -4,7 +4,6 @@ $font-stack-logo: 'Raleway',
 sans-serif;
 $font-stack-headers: 'Open Sans',
 sans-serif;
-$font-color: white;
 
 * {
     margin: 0;
@@ -21,8 +20,8 @@ a:focus {
 }
 
 a:hover {
-   text-decoration: none;
-   color: white;
+    text-decoration: none;
+    color: white;
 }
 
 li {
@@ -92,7 +91,7 @@ h3 {
     width: 20%;
     font-size: 30px;
     font-weight: bold;
-    color: $font-color;
+    color: white;
     font-family: $font-stack-logo;
 }
 
@@ -112,12 +111,12 @@ h3 {
 
 li a {
     text-decoration: none;
-    color: $font-color
+    color: white;
 }
 
 li a:visited {
     text-decoration: none;
-    color: $font-color;
+    color: white;
 }
 
 li a:focus {
@@ -207,9 +206,17 @@ li a:hover,
 }
 
 .about {
-    height: 400px;
+    height: 650px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
+}
+
+.about_describtion {
+    padding: 30px 150px;
+    font-family: $font-stack;
+    font-size: 16px;
+    color: rgb(160, 160, 160);
+    line-height: 28px;
 }
 
 #btn-get-in-touch {
@@ -277,13 +284,13 @@ li a:hover,
 .subcribe {
     background: linear-gradient(to left, #eb9d7f, #f086af);
     height: 530px;
-    color: $font-color;
     font-size: 15px;
     line-height: 28px;
     font-family: $font-stack;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 40px;
+    color: white;
 }
 
 .email_form {
@@ -371,7 +378,7 @@ li a:hover,
 }
 
 .home-demo {
-    background-color: rgb(249, 252, 253); 
+    background-color: rgb(249, 252, 253);
     padding-bottom: 70px;
 }
 
@@ -390,6 +397,7 @@ li a:hover,
     margin: 0;
     font-style: italic;
     font-weight: 300;
+    margin-top: 40px;
 }
 
 .reviews_txt {
@@ -476,18 +484,18 @@ li a:hover,
 }
 
 .footer_description {
-    color: $font-color;
+    color: white;
     padding: 40px;
 }
 
 .footer_nav {
-    color: $font-color;
+    color: white;
     padding: 40px;
     line-height: 30px;
 }
 
 .contacts_footer {
-    color: $font-color;
+    color: white;
     padding: 40px;
 }
 
@@ -516,8 +524,16 @@ li a:hover,
     }
 
     .about {
-        height: 250px;
+        height: 700px;
         padding-top: 50px;
+    }
+
+    .about_describtion {
+        padding: 5px 0px;
+        font-family: $font-stack;
+        font-size: 16px;
+        color: rgb(160, 160, 160);
+        
     }
 
     #btn-get-in-touch {
@@ -570,6 +586,10 @@ li a:hover,
         font-weight: 500;
         padding-right: 10px;
     }
+
+.contact {
+    height: 700px;
+}
 
     .blog {
         padding-top: 50px;
@@ -681,13 +701,13 @@ li a:hover,
     }
 }
 
-
+//CONTACT FORM
 
 .contact {
     max-width: 100%;
     position: relative;
     margin: auto;
-    height: 800px;
+    height: 700px;
     margin-bottom: 15px;
 }
 
