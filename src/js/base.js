@@ -14,12 +14,17 @@
   });
 
 
+//PRELOADER
+
   $(window).on('load', function () {
     $preloader = $('.loaderArea'),
       $loader = $preloader.find('.loader');
     $loader.fadeOut();
     $preloader.delay(850).fadeOut('slow');
   });
+
+
+//MENU
 
   (function ($) {
     $(function () {
@@ -38,7 +43,9 @@
   })(jQuery);
 
 
-  //form
+//FORM
+
+  
   var form = document.querySelector('.contact-form');
   var requireInputs = document.querySelectorAll('.require');
 
@@ -80,7 +87,10 @@ form.reset();
       requireInputs[i].classList.remove('errorMsg');
     }
   }
-  //form end
+  
+
+//COUNTER
+
 
   var countYears = $('.numberYears').text();
 
@@ -124,17 +134,17 @@ form.reset();
     }
   });
 
-  console.log('Hi');
-  /*
-  $(function(){
 
-    $('.menuToggle').on('click', function() {
-       $('.menu').slideToggle(300, function(){
-            if( $(this).css('display') === "none"){
-                $(this).removeAttr('style');
-            }
-       });
+//SLOW SCROLL
 
+  $(document).ready(function () {
+    $("nav").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body, html').animate({
+            scrollTop: top
+        }, 1500);
     });
+});
 
-  });*/
