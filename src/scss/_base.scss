@@ -58,14 +58,24 @@ h3 {
 
 .hero-txt {
     padding-top: 170px;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
     font-family: $font-stack-headers;
     font-weight: 800;
     letter-spacing: 5px;
     text-shadow: 0 0 0 rgba(255, 255, 255, 0.87);
     color: transparent;
-    animation: shadows 4s infinite ease-in;
+    animation: shadows 9s infinite ease-in;
+}
+
+.hero_describtion {
+    text-align: center;
+    font-family: $font-stack;
+    font-size: 22px;
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.829);
+    color: transparent;
+    padding-top: 100px;
+    text-transform: uppercase;
 }
 
 @keyframes shadows {
@@ -208,7 +218,12 @@ li a:hover,
 .about {
     height: 650px;
     text-align: center;
-    padding-top: 70px;
+}
+
+.about_background {
+    background-color: rgb(249, 252, 253);
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .about_describtion {
@@ -537,7 +552,7 @@ li a:hover,
         font-family: $font-stack;
         font-size: 16px;
         color: rgb(160, 160, 160);
-        
+
     }
 
     #btn-get-in-touch {
@@ -591,9 +606,9 @@ li a:hover,
         padding-right: 10px;
     }
 
-.contact {
-    height: 700px;
-}
+    .contact {
+        height: 700px;
+    }
 
     .blog {
         padding-top: 50px;
@@ -626,13 +641,13 @@ li a:hover,
     }
 
     #link_get-in-touch {
- display: none;
+        display: none;
     }
 
     .header-navigation {
         position: fixed;
         display: none;
-        top: 25px;
+        top: 35px;
         right: 0;
         left: 0;
         margin-top: 90px;
@@ -800,13 +815,14 @@ li a:hover,
     position: fixed;
     bottom: 30px;
     right: 25px;
-    transition: background-color .3s, 
-      opacity .5s, visibility .5s;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-  }
-  #button::after {
+}
+
+#button::after {
     content: "\f077";
     font-family: FontAwesome;
     font-weight: normal;
@@ -814,17 +830,29 @@ li a:hover,
     font-size: 2em;
     line-height: 50px;
     color: #fff;
-  }
-  #button:hover {
+}
+
+#button:hover {
     cursor: pointer;
     background-color: #333;
-  }
-  #button:active {
+}
+
+#button:active {
     background-color: #555;
-  }
-  #button.show {
+}
+
+#button.show {
     opacity: 1;
     visibility: visible;
-  }
-  
-  
+}
+
+
+
+.spoiler-title {
+    cursor: pointer;
+}
+
+.spoiler-body {
+    display: none;
+    background: #f1f1f1;
+}
