@@ -50,6 +50,9 @@ h3 {
     overflow: hidden;
 }
 
+
+//HERO
+
 .hero {
     background: linear-gradient(to left, #eb9d7f, #f086af);
     width: 100%;
@@ -215,6 +218,9 @@ li a:hover,
     display: block;
 }
 
+
+//ABOUT
+
 .about {
     height: 650px;
     text-align: center;
@@ -247,10 +253,13 @@ li a:hover,
     outline: none;
 }
 
+
+//SERVICES
+
 .services {
     height: 730px;
     background-color: rgb(249, 252, 253);
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -297,6 +306,9 @@ li a:hover,
     text-align: center;
 }
 
+
+//SUBSCRIBE
+
 .subscribe {
     background: linear-gradient(to left, #eb9d7f, #f086af);
     height: 530px;
@@ -323,8 +335,11 @@ li a:hover,
     font-size: 16px;
 }
 
+
+//WORKS
+
 .works {
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
     padding-bottom: 100px;
 }
@@ -389,6 +404,9 @@ li a:hover,
     outline: none;
 }
 
+
+//REWIEWS
+
 .reviews {
     background-color: rgb(249, 252, 253);
     height: 650px;
@@ -412,11 +430,23 @@ li a:hover,
 .home-demo h2 {
     color: rgb(172, 172, 172);
     text-align: center;
-    padding: 25px 0;
-    margin: 0;
+    padding-top: 25px;
+      margin: 0;
     font-style: italic;
     font-weight: 300;
     margin-top: 40px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+display: none;
+}
+
+.latest_works-describtion {
+    color: rgb(158, 158, 158);
+    text-align: center;
+    font-style: italic;
+    padding-top: 22px;
+    font-size: 20px;
 }
 
 .reviews_txt {
@@ -427,6 +457,10 @@ li a:hover,
     padding-top: 40px;
 }
 
+
+
+//ACHIEVEMENTS
+
 .achievements {
     height: 450px;
     background-color: rgba(17, 196, 212, 0.918);
@@ -435,7 +469,7 @@ li a:hover,
     font-size: 15px;
     line-height: 28px;
     font-family: $font-stack;
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .achievements_numbers-items {
@@ -458,10 +492,14 @@ li a:hover,
     color: rgba(255, 255, 255, 0.685);
 }
 
+
+
+//BLOG
+
 .blog {
     background-color: rgb(249, 252, 253);
-    height: 1100px;
-    padding-top: 100px;
+    height: 1000px;
+    padding-top: 70px;
     text-align: center;
     line-height: 28px;
     font-family: $font-stack;
@@ -492,6 +530,10 @@ li a:hover,
     font-style: italic;
     color: rgb(189, 189, 189);
 }
+
+
+
+//FOOTER
 
 .footer {
     background-color: #ff86a0;
@@ -527,6 +569,8 @@ li a:hover,
     padding-top: 8px;
 }
 
+
+
 @media (max-width: 320px) {}
 
 @media (max-width: 575px) {
@@ -543,8 +587,7 @@ li a:hover,
     }
 
     .about {
-        height: 700px;
-        padding-top: 50px;
+        height: 600px;
     }
 
     .about_describtion {
@@ -664,6 +707,9 @@ li a:hover,
     }
 }
 
+
+//PRELOADER
+
 .loaderArea {
     background: linear-gradient(90deg, #f086af, #eb9d7f);
     overflow: hidden;
@@ -767,6 +813,7 @@ li a:hover,
     background: #111;
     padding: 0.9em;
     margin-top: 2em;
+    border-radius: 20px;
 }
 
 .mail_grids .btn-contact:hover {
@@ -813,10 +860,10 @@ li a:hover,
     text-align: center;
     border-radius: 25px;
     position: fixed;
-    bottom: 30px;
+    bottom: 36px;
     right: 25px;
     transition: background-color .3s,
-        opacity .5s, visibility .5s;
+     opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -848,11 +895,16 @@ li a:hover,
 
 
 
+//SPOILER BLOCKS
+
 .spoiler-title {
     cursor: pointer;
 }
 
 .spoiler-body {
     display: none;
-    background: #f1f1f1;
+    font-size: 17px;
+    font-family: $font-stack;
+    color: rgb(160, 160, 160);
+    padding-top: 30px;
 }
