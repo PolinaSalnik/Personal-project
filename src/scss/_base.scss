@@ -406,14 +406,7 @@ li a:hover,
 }
 
 
-//REWIEWS
-
-.reviews {
-    background-color: rgb(249, 252, 253);
-    height: 650px;
-    padding-top: 80px;
-    text-align: center;
-}
+//OWL CAROUSELS
 
 .home-demo {
     background-color: rgb(249, 252, 253);
@@ -432,14 +425,16 @@ li a:hover,
     color: rgb(172, 172, 172);
     text-align: center;
     padding-top: 25px;
-      margin: 0;
+    margin: 0;
     font-style: italic;
     font-weight: 300;
     margin-top: 40px;
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-display: none;
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    display: none;
 }
 
 .latest_works-describtion {
@@ -448,6 +443,17 @@ display: none;
     font-style: italic;
     padding-top: 22px;
     font-size: 20px;
+}
+
+
+
+//REWIEWS
+
+.reviews {
+    background-color: rgb(249, 252, 253);
+    height: 650px;
+    padding-top: 80px;
+    text-align: center;
 }
 
 .reviews_txt {
@@ -572,11 +578,25 @@ display: none;
 
 
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .about {
+        height: 600px;
+    }
+}
 
 @media (max-width: 575px) {
     h2 {
         font-size: 20px;
+    }
+
+    //HERO
+
+    .hero {
+        height: 600px;
+    }
+
+    .hero-txt {
+        padding-top: 130px;
     }
 
     .flex-nav {
@@ -587,13 +607,22 @@ display: none;
         font-size: 30px;
     }
 
-    .about {
-        height: 645px;
+    .hero_describtion {
+        padding-top: 150px;
     }
 
-.about_background {
-    padding: 10px 0px;
-}
+    //ABOUT
+
+    .about {
+        height: 540px;
+    }
+
+    .about_background {
+        padding-top: 20px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+
+    }
 
     .about_describtion {
         padding: 5px 0px;
@@ -602,28 +631,49 @@ display: none;
         color: rgb(160, 160, 160);
     }
 
-#btn_learn_more {
-    margin-top: 0px;
-}
+    #btn_learn_more {
+        margin-top: 0px;
+    }
 
-.spoiler-body {
-    font-size: 15px;
-}
+    .spoiler-body {
+        font-size: 15px;
+    }
 
     #btn-get-in-touch {
         margin-top: 0;
         margin-bottom: 50px;
     }
 
+    //SERVICES
+
     .services {
         margin-top: 80px;
         padding-top: 50px;
-        height: 350px;
+        height: 480px;
+    }
+
+    .our_services_items_txt {
+        display: none;
     }
 
     .our_services_items {
-        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 50px;
     }
+
+    .our_services_items_names {
+        font-size: 15px;
+        font-weight: 300;
+        font-family: $font-stack;
+        color: rgb(160, 160, 160);
+    }
+
+    .glyphicon {
+        font-size: 25px;
+    }
+
+//SUBSCRIBE
 
     .subscribe {
         padding-top: 50px;
@@ -634,11 +684,7 @@ display: none;
         padding: 15px 50px;
     }
 
-    .reviews {
-        display: none;
-    }
-
-    .works {
+    .home-demo {
         display: none;
     }
 
@@ -875,7 +921,7 @@ display: none;
     bottom: 36px;
     right: 25px;
     transition: background-color .3s,
-     opacity .5s, visibility .5s;
+        opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
@@ -923,7 +969,7 @@ display: none;
 
 .spoiler_img {
     padding-top: 10px;
-   
+
 }
 
 #icon1,
