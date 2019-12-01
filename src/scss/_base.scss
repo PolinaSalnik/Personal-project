@@ -222,7 +222,7 @@ li a:hover,
 //ABOUT
 
 .about {
-    height: 650px;
+    height: 575px;
     text-align: center;
 }
 
@@ -233,7 +233,7 @@ li a:hover,
 }
 
 .about_describtion {
-    padding: 30px 150px;
+    padding: 30px 150px 0px 150px;
     font-family: $font-stack;
     font-size: 16px;
     color: rgb(160, 160, 160);
@@ -378,7 +378,8 @@ li a:hover,
     line-height: 30px;
 }
 
-#btn_view_portfolio {
+#btn_learn_more {
+    color: white;
     margin-top: 30px;
     background-color: #ff86a0;
     border-radius: 32px;
@@ -587,16 +588,27 @@ display: none;
     }
 
     .about {
-        height: 600px;
+        height: 645px;
     }
+
+.about_background {
+    padding: 10px 0px;
+}
 
     .about_describtion {
         padding: 5px 0px;
         font-family: $font-stack;
         font-size: 16px;
         color: rgb(160, 160, 160);
-
     }
+
+#btn_learn_more {
+    margin-top: 0px;
+}
+
+.spoiler-body {
+    font-size: 15px;
+}
 
     #btn-get-in-touch {
         margin-top: 0;
@@ -906,5 +918,18 @@ display: none;
     font-size: 17px;
     font-family: $font-stack;
     color: rgb(160, 160, 160);
-    padding-top: 30px;
+    padding-top: 20px;
+}
+
+.spoiler_img {
+    padding-top: 10px;
+   
+}
+
+#icon1,
+#icon2,
+#icon3 {
+    height: 40px;
+    width: 40px;
+    padding: 5px
 }
