@@ -584,9 +584,9 @@ li a:hover,
 
 
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
     .about {
-        height: 800px;
+        height: 1000px;
     }
 }
 
@@ -628,7 +628,7 @@ li a:hover,
         padding-top: 20px;
         padding-bottom: 0px;
         margin-bottom: 10px;
-font-size: 18px;
+        font-size: 18px;
     }
 
     .about_describtion {
@@ -680,7 +680,7 @@ font-size: 18px;
         font-size: 25px;
     }
 
-//SUBSCRIBE
+    //SUBSCRIBE
 
     .subscribe {
         padding-top: 50px;
@@ -688,50 +688,51 @@ font-size: 18px;
     }
 
     .email_form {
-        padding: 15px 50px;
+        padding: 15px 40px;
+        margin-top: 20px
     }
 
     .home-demo {
         display: none;
     }
 
-//WORKS
+    //WORKS
 
-.works {
-    padding-top: 70px;
-    padding-bottom: 50px;
-}
+    .works {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
 
-.pink_background {
-    width: 270px;
-    height: 310px;
-}
+    .pink_background {
+        width: 270px;
+        height: 310px;
+    }
 
-#works-img {
-    width: 230px;
-    height: 300px;
-}
+    #works-img {
+        width: 230px;
+        height: 300px;
+    }
 
-.work_example-txt {
-display: none;
-}
+    .work_example-txt {
+        display: none;
+    }
 
-.work_example_notebook-txt {
-   display: none;
-}
+    .work_example_notebook-txt {
+        display: none;
+    }
 
-.work_example_item {
-    padding-left: 45px;
-    padding-bottom: 50px;
-}
+    .work_example_item {
+        padding-left: 35px;
+        padding-bottom: 50px;
+    }
 
-//REVIEWS
+    //REVIEWS
 
     .reviews {
         display: none;
     }
 
-//ACHIEMENTS
+    //ACHIEMENTS
 
     .achievements {
         padding-top: 50px;
@@ -743,23 +744,23 @@ display: none;
     }
 
     .numberYears,
-.numberProjects,
-.numberCustomers {
-    font-size: 40px;
-    font-weight: 600;
-}
+    .numberProjects,
+    .numberCustomers {
+        font-size: 40px;
+        font-weight: 600;
+    }
 
-.txt_blocks_description-achievements {
-    font-size: 14px;
-}
+    .txt_blocks_description-achievements {
+        font-size: 14px;
+    }
 
-//CONTACT
+    //CONTACT
 
     .contact {
         height: 700px;
     }
 
-//BLOG
+    //BLOG
 
     .blog {
         padding-top: 40px;
@@ -771,7 +772,7 @@ display: none;
         justify-content: center;
     }
 
-//FOOTER
+    //FOOTER
 
     .footer_description {
         display: none;
